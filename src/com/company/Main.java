@@ -1,5 +1,8 @@
 package com.company;
-import java.util.Scanner;
+
+import Study.*;
+
+import java.util.*;
 
 
 public class Main {
@@ -37,9 +40,12 @@ public class Main {
         }
         ShowVariableLength(1,5,3,2);
         ShowVariableLength(8,4);*/
-        Person NewPerson = new Person();
-        System.out.println(NewPerson.height);
+        Shape Shapes[] = new Shape[]{new Square(), new Circle()};
+        for (int i = 0; i < Shapes.length; i++){
+            Shapes[i].Draw();
+        }
     }
+
     public static int func(int a, int b){
         return a+b;
     }
